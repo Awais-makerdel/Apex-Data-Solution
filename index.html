@@ -2,130 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Professional Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #0073e6;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background: #005bb5;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #0073e6;
-      color: #fff;
-      margin-top: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name / Your Site</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- For Google Fonts, e.g.: -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-    <!-- Left Side (Text Content) -->
-    <div class="space-y-6">
-      <h1 class="font-heading text-5xl font-extrabold text-gray-900 leading-tight">
-        Get Clean, Accurate & Verified Data 
-        <span class="block">Without the Frustration of Wrong Emails & Empty Campaigns — All in 16 Hours</span>
-      </h1>
-      <p class="text-xl text-gray-700 max-w-2xl">
-        1,100+ Successful Projects, I’ve Helped Founders, Agencies, and People Like You Scale Faster Using Verified & Accurate Data
-      </p>
-      <a href="#order" class="inline-block px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg rounded-md shadow-md transition">
-        Order Accurate & Verified Data in only 16HRS
-      </a>
-    </div>
-
-    <!-- Right Side (Image with Background Graphic) -->
-    <div class="relative flex justify-center items-center">
-      <div class="absolute w-72 h-72 rounded-full bg-yellow-300/40"></div>
-      <img src="your-image.png" alt="Awais - Data Expert" class="relative w-80 h-auto rounded-lg shadow-lg z-10">
-    </div>
-    
-  </div>
-</section>
-
-  
-            {/* VSL Placeholder */}
-            <section className="py-20 bg-background text-center">
-                <h2 className="font-heading text-3xl font-bold mb-6">Watch How It Works</h2>
-                <div className="max-w-4xl mx-auto">
-                    <iframe className="w-full h-96" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="VSL Placeholder" allowFullScreen></iframe>
-                </div>
-            </section>
-  
-{/* Story Section */}
-<section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
-    
-    {/* Left Side - Image with Yellow Graphic */}
-    <div className="relative flex justify-center items-center">
-      <div className="absolute -z-10 w-72 h-72 bg-yellow-400 rotate-45"></div>
-      <img src="your-story-image.png" alt="Awais - Data Expert" className="relative w-96 h-auto rounded-lg shadow-lg z-10" />
-    </div>
-
-    {/* Right Side - Text */}
-    <div className="space-y-6">
-      <h3 className="uppercase text-gray-600 tracking-wide font-bold">Heya!</h3>
-      <h2 className="font-heading text-4xl font-bold text-gray-900">I’m Awais</h2>
-      <p className="text-lg text-gray-700 leading-relaxed">
-        I wasn’t always known as the “data guy” businesses could count on. 
-        In fact, I started with messy spreadsheets, missing info, and leads that went nowhere. 
-        Instead of quitting, I became obsessed with solving the problem. 
-        I learned how to transform raw, scattered data into <strong>clean, verified, and actionable insights that fuel real growth</strong>.
-        <br /><br />
-        Since then, I’ve worked with founders, agencies, and startups worldwide, completing 1,100+ projects 
-        and helping them reach the right people faster — without wasted time or money.  
-        <br /><br />
-        Today, with over <strong>3+ years of experience</strong>, I’m on a mission to help businesses 
-        scale using verified data that delivers results. 🚀
-      </p>
-
-      {/* Experience Highlight */}
-      <div className="text-5xl font-heading font-black text-yellow-500">
-        03<span className="text-black">+</span> <span className="text-2xl font-normal text-gray-900">Years Of Experience</span>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">YourSite</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>I'm [Your Name]</h1>
+        <p>Short tagline or statement about what you do</p>
+        <a href="#programs" class="btn btn-primary">View Programs</a>
+      </div>
+    </section>
+  </header>
 
-      {/* Buttons */}
-      <div className="flex space-x-4">
-        <a href="#story" className="px-6 py-3 bg-yellow-400 text-black font-bold rounded-md shadow-md hover:bg-yellow-500 transition">
-          My Full Story
-        </a>
-        <a href="#order" className="px-6 py-3 bg-black text-white font-bold rounded-md shadow-md hover:bg-gray-800 transition">
-          Place Your Order
-        </a>
+  <section id="about" class="about section-light">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Here is your story... who you are, what you do.</p>
+    </div>
+  </section>
+
+  <section id="programs" class="section-dark">
+    <div class="container">
+      <h2>My Programs</h2>
+      <div class="program-list">
+        <div class="program-item">
+          <h3>Program One</h3>
+          <p>Detail about program one.</p>
+        </div>
+        <div class="program-item">
+          <h3>Program Two</h3>
+          <p>Detail about program two.</p>
+        </div>
       </div>
     </div>
-    
-  </div>
-</section>
+  </section>
 
-  
+  <section id="testimonials" class="section-light">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <p>What people say about me...</p>
+      <!-- repeat testimonial cards if you want -->
+    </div>
+  </section>
+
+  <section id="contact" class="section-dark">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: your.email@example.com</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
