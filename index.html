@@ -27,8 +27,8 @@
     <div class="container hero-grid">
       <div class="hero-text">
         <h2>Get Clean, Accurate & Verified Data</h2>
-        <p>Without the Frustration of Wrong Emails-All in 16 Hours</p>
-        <a href="#pricing" class="btn-primary">Order Accurate & Verified Data in only 16HRS</a>
+        <p>“Over 1,100+ Projects Completed Helping Founders, Agencies, and Entrepreneurs Scale Faster With Actionable Data”</p>
+        <a href="#pricing" class="btn-primary">Order Accurate & Verified Data</a>
       </div>
       <div class="hero-img">
         <div class="bg-circle"></div>
@@ -45,10 +45,11 @@
         <img src="your-story-image.png" alt="Awais - Data Expert">
       </div>
       <div class="story-text">
-        <h3>Heya!</h3>
+        <h3>Hey!</h3>
         <h2>I’m Awais</h2>
         <p>
-          I wasn’t always the “data guy” businesses could count on. I started with messy spreadsheets and leads that went nowhere. Instead of giving up, I learned how to transform raw, scattered data into <strong>clean, verified, and actionable insights</strong>.
+          I wasn’t always the “data guy” businesses could count on.       I started with messy spreadsheets and leads that went nowhere.      
+    Instead of giving up, I learned how to transform raw, scattered data into <strong>clean, verified, and actionable insights</strong>.1,100+ projects completed, trusted by startups, e-commerce brands, and agencies worldwide.
         </p>
         <p>
           Fast forward to today — I’ve completed 1,100+ projects worldwide, helping businesses reach the right people faster. With <strong>3+ years of experience</strong>, I’m on a mission to help businesses grow using data that works.
@@ -108,7 +109,23 @@
         { name: "Market & Competitor Research", price: "$10", desc: "Insights that guide smarter decisions and strategy" },
         { name: "Product & E-com Data", price: "$10", desc: "Organized product info to make pricing & sourcing easy" },
         { name: "Real Estate Leads", price: "$15", desc: "Verified property contacts for faster deals and ROI" }
-    
+
+  {/* Services Section */}
+            <section id="services" className="py-20 bg-background">
+                <div className="max-w-[120rem] mx-auto px-6">
+                    <h2 className="font-heading text-5xl font-bold text-center mb-12">Our Data Services That Drive Growth</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {services.map((service, index) => (
+                            <Card key={index} className="bg-cream">
+                                <CardContent className="p-6">
+                                    <h3 className="font-heading text-2xl font-bold mb-2">{service.name} - {service.price}</h3>
+                                    <p className="font-paragraph text-black/70">{service.desc}</p>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                </div>
+            </section>
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials">
     <div class="container">
