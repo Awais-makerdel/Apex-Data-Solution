@@ -1,206 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compass Concierge</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EstateSpark — Ignite & Convert</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Compass Concierge</div>
-            <ul class="nav-links">
-                <li data-scroll="#stories">Success Stories</li>
-                <li data-scroll="#improvements">Covered Services</li>
-                <li data-scroll="#how-it-works">How it Works</li>
-                <li data-scroll="#video">Video</li>
-                <li data-scroll="#faq">FAQs</li>
-            </ul>
-            <div class="nav-actions">
-                <div class="phone">844-669-9735</div>
-                <button class="btn" data-scroll="#contact">Get Started</button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Compass Concierge</h1>
-            <h2>Get fronted for home improvement costs with zero due until closing*</h2>
-            <p>Sell your home faster and for a higher price with services like staging, flooring, painting, and more.</p>
-        </div>
-        <div class="hero-video">
-            <video autoplay loop muted playsinline>
-                <source src="video/Concierge_Hero.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
+  <!-- NAV / HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-name">EstateSpark</div>
+        <div class="brand-sub">Success Stories · The Package · How it Works</div>
+      </div>
 
-    <!-- Three Phased Marketing -->
-    <section id="three-phased-marketing">
-        <h2>Start marketing your home before its public debut</h2>
-        <div class="phase-blocks">
-            <div class="phase-block">
-                <h3>Private Exclusives</h3>
-                <p>Generate early buyer demand without public days on market.</p>
-            </div>
-            <div class="phase-block">
-                <h3>Coming Soon</h3>
-                <p>Broaden exposure while building momentum before public listing.</p>
-            </div>
-            <div class="phase-block">
-                <h3>Go Live</h3>
-                <p>List on MLS and third-party sites with refined pricing strategy.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pillars -->
-    <section id="pillars">
-        <div class="pillar">
-            <h4>Smart</h4>
-            <p>Services that deliver the greatest return on investment.</p>
-        </div>
-        <div class="pillar">
-            <h4>Fast</h4>
-            <p>Quick turnaround so your home can sell faster.</p>
-        </div>
-        <div class="pillar">
-            <h4>Transparent</h4>
-            <p>Zero due until closing*</p>
-        </div>
-        <div class="pillar">
-            <h4>Easy</h4>
-            <p>Your agent supports you throughout the process.</p>
-        </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section id="stories">
-        <h2>Success Stories</h2>
-        <div class="slider">
-            <div class="slides">
-                <div class="slide active">
-                    <div class="slide-video">
-                        <video autoplay muted loop>
-                            <source src="video/story1.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="slide-content">
-                        <p>"The Compass Concierge service helped me sell faster than I imagined!"</p>
-                        <span>- Julia, Seller | Oakland</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-image">
-                        <img src="images/before_after1.jpg" alt="Before and After Home">
-                    </div>
-                    <div class="slide-content">
-                        <p>"No upfront cost and amazing results!"</p>
-                        <span>- Jo Ann, Seller | SF Bay Area</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-video">
-                        <video autoplay muted loop>
-                            <source src="video/story2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="slide-content">
-                        <p>"The service was invaluable in achieving our home goals."</p>
-                        <span>- Bill & Jill, Sellers | NYC</span>
-                    </div>
-                </div>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
-    </section>
-
-    <!-- Covered Services -->
-    <section id="improvements">
-        <h2>Covered Services</h2>
+      <nav class="nav">
         <ul>
-            <li>Floor repair</li>
-            <li>Staging</li>
-            <li>Painting</li>
-            <li>Landscaping</li>
-            <li>Kitchen & Bathroom upgrades</li>
-            <li>Roofing & HVAC repair</li>
-            <li>And 100+ more services</li>
+          <li><a href="#stories">Success Stories</a></li>
+          <li><a href="#package">The Package</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
         </ul>
-    </section>
+      </nav>
 
-    <!-- Stats -->
-    <section id="stats">
-        <div class="stat">
-            <h3>147%</h3>
-            <p>Cost recovery from refinishing floors</p>
+      <div class="top-cta">
+        <a class="btn primary" href="#contact">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / VSL -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-inner">
+      <div class="hero-vsl">
+        <!-- Video placeholder / VSL -->
+        <div class="vsl-wrap">
+          <video id="heroVideo" class="vsl-video" autoplay muted loop playsinline>
+            <source src="video/hero.mp4" type="video/mp4">
+            <!-- fallback -->
+          </video>
+          <div class="vsl-overlay">
+            <button id="heroPlay" class="btn secondary">▶ Watch VSL</button>
+          </div>
         </div>
-        <div class="stat">
-            <h3>$400</h3>
-            <p>Return per $100 in staging</p>
+      </div>
+
+      <div class="hero-summary">
+        <h1 class="hero-head">Convert Cold Austin Leads Into Hot Closings: The Real Estate Email System Built to Scale</h1>
+        <p class="hero-sub">Stop leaving money on the table. Unlock premium, data-driven, hand-crafted email sequences—specifically designed for the competitive Texas market—that automate your follow-up and guarantee you stay top-of-mind until the contract is signed.</p>
+        <a href="#contact" class="btn primary large">Start Real Closing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO SPLIT (picture left, content right) -->
+  <section id="intro" class="intro-section">
+    <div class="container split">
+      <div class="split-left">
+        <figure class="profile-card">
+          <img src="images/profile.jpg" alt="Alex Shah Profile" class="profile-img">
+          <figcaption>
+            <strong>Alex Shah</strong><br>
+            Real Estate Email Specialist
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="split-right">
+        <h2 class="section-head">Headline 2 — Specialized real estate, experienced copywriter</h2>
+        <p class="lead">Email: alex@estatespark.com</p>
+
+        <div class="objection">
+          <p><strong>Objection handle:</strong> Worried about being too pushy? Our sequences feel human, local, and trustworthy — built to educate, not spam.</p>
         </div>
-        <div class="stat">
-            <h3>48%</h3>
-            <p>Sellers’ agents reporting faster sales with staging</p>
+
+        <div class="cta-inline">
+          <a class="btn primary" href="#contact">CTA: Value-based — Start Real Closing</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works">
-        <h2>How it Works</h2>
-        <ol>
-            <li>Determine which services increase your home's value.</li>
-            <li>Your agent engages contractors and vendors.</li>
-            <li>Once complete, your home goes on the market.</li>
-            <li>Pay only when the home sells or program term ends.</li>
-        </ol>
-    </section>
+  <!-- BLACK STORY / WHY YOU NEED ME -->
+  <section id="why" class="why-section">
+    <div class="container">
+      <h2 class="why-head">Why You Need Me</h2>
+      <p class="why-text">
+        🔥 The Expert's Story: Why You Need Me<br><br>
+        I’m Alex Shah, and I help real estate professionals stop losing leads to silence and start igniting conversions. For years, I specialized in high-stakes B2C sales—where trust is earned over months. I realized the universal flaw in every campaign: the follow-up was always generic, robotic, and killed the momentum. That’s why I specialize in real estate only, and why email is my absolute superpower.<br><br>
+        Real estate is a high-stakes, emotional journey, and the agents who win are the ones who guide, not just sell. My unique experience translates that human psychology—the fear and desire tied to homeownership—into a sequence that sounds like a trusted, patient fiduciary. My campaigns don't just get opened; they start powerful conversations and ensure you are the only agent they trust when they are ready to transact. Ready to automate your authority and watch your pipeline explode?
+      </p>
+    </div>
+  </section>
 
-    <!-- Video Section -->
-    <section id="video">
-        <h2>See Compass Concierge in Action</h2>
-        <div class="video-cta" id="play-main-video">▶ Watch Film</div>
-        <div class="video-thumb">
-            <img src="images/video_thumb.jpg" alt="Video Thumbnail">
+  <!-- CTA (Pain -> Desire) -->
+  <section class="cta-big">
+    <div class="container cta-inner">
+      <div class="cta-copy">
+        <p class="cta-micro">CTA = Pain → Desire</p>
+        <h3>Stop losing leads. Start converting. One sequence at a time.</h3>
+      </div>
+      <div>
+        <a class="btn primary large" href="#contact">Start Real Closing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY + CRM (two-column) -->
+  <section id="case" class="case-section">
+    <div class="container case-inner">
+      <div class="case-left">
+        <div class="client-box">
+          <div class="client-avatar">Client</div>
+          <div class="client-meta">
+            <strong>Javier R.</strong><br>
+            Independent Broker — North Austin / Round Rock
+          </div>
         </div>
-    </section>
 
-    <!-- FAQ -->
-    <section id="faq">
-        <h2>FAQs</h2>
-        <div class="faq-grid">
-            <div class="faq-card">
-                <h4>Any services not covered?</h4>
-                <p>Most home improvement services are included for your convenience.</p>
-            </div>
-            <div class="faq-card">
-                <h4>When do I pay?</h4>
-                <p>Zero due until closing. Fees or interest may apply depending on state.</p>
-            </div>
-            <div class="faq-card">
-                <h4>How to participate?</h4>
-                <p>Call your Compass agent or fill out the contact form.</p>
-            </div>
+        <div class="case-points">
+          <h4>Proven Track Record</h4>
+          <ul>
+            <li><strong>The challenges:</strong> 2,500 unengaged leads; 8% open rate; zero conversion in 12 months.</li>
+            <li><strong>When Hired:</strong> Deployed hyper-segmented nurture flows focused on local tax, schools, commute time.</li>
+            <li><strong>The Result:</strong> Open rate → 38% (60 days); 9 consultations; 2 deals closed ($450k+).</li>
+            <li><strong>ROI Snapshot:</strong> 15x first two deals covered sequence cost.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Work with David Taxer</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Zip" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Phone" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <div class="case-cta">
+          <a href="#contact" class="btn primary">Get This Sequence</a>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="case-right">
+        <div class="crm-card">
+          <div class="crm-header">CRM Dashboard (Preview)</div>
+          <img src="images/crm-mock.jpg" alt="CRM mock" class="crm-img">
+          <div class="crm-note">Real-time open & conversion metrics • Hyper-local tags • CRM-ready copy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF CTA / FINAL -->
+  <section id="proof" class="proof-section">
+    <div class="container proof-inner">
+      <div class="proof-left">
+        <h3>Proof-Based CTA</h3>
+        <p>Our Ignite & Convert™ framework is battle-tested — hyper-local, TREC-compliant, and ROI-focused.</p>
+      </div>
+      <div class="proof-right">
+        <a href="#contact" class="btn primary large">Start Real Closing — $100 to start</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (form) -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-inner">
+      <div class="contact-left">
+        <h2>Start Real Closing</h2>
+        <p>Low-risk, high-value. Enter details and we’ll reach out.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <label><input type="text" name="name" placeholder="Your name" required></label>
+        <label><input type="email" name="email" placeholder="Email" required></label>
+        <label><input type="text" name="zip" placeholder="Zip" required></label>
+        <label><input type="tel" name="phone" placeholder="Phone"></label>
+        <button type="submit" class="btn primary">Start Real Closing</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>EstateSpark</strong> — Ignite & Convert™</div>
+      <div>Contact: alex@estatespark.com • +1 (555) 555-5555</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
