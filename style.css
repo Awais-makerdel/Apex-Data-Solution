@@ -14,97 +14,85 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #111;
+  margin:0;
+  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color:var(--white);
+  background:var(--bg);
+  line-height:1.5;
 }
 
-/* HEADER */
-.header {
-    width: 100%;
-    background: #000;
-    color: white;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Layout container */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 22px;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: 700;
+/* Header */
+.site-header{
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  background:var(--bg);
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.header-inner{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 0;
+}
+.brand .brand-name{
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:0.4px;
+  color:var(--white);
+}
+.brand .brand-sub{
+  color:var(--muted);
+  font-size:12px;
 }
 
-.nav a {
-    margin-left: 28px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
+/* Nav */
+.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+.nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:14px}
+.nav a:hover{color:var(--white)}
 
-.nav a:hover {
-    opacity: 0.7;
+/* Buttons */
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+  border-radius:8px;
+  padding:10px 16px;
 }
+.btn.primary{background:var(--white);color:var(--bg);box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.btn.primary.large{padding:14px 28px;font-size:16px}
+.btn.secondary{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.08)}
 
 /* HERO */
-.hero {
-    background: #f3f3f3; /* LIGHT GREY */
-    padding: 100px 50px;
+.hero-section{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  padding:48px 0;
+  border-bottom:1px solid rgba(255,255,255,0.03);
 }
+.hero-inner{display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.vsl-wrap{position:relative;border-radius:12px;overflow:hidden;min-width:380px;max-width:720px;height:420px;background:#000}
+.vsl-video{width:100%;height:100%;object-fit:cover;display:block}
+.vsl-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.vsl-overlay .btn{pointer-events:auto;opacity:0.95}
 
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-left {
-    width: 50%;
-}
-
-.headline {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.subheadline {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.cta-main {
-    background: black;
-    color: white;
-    padding: 15px 40px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-}
-
-.cta-main:hover {
-    opacity: 0.85;
-}
-
-/* VSL */
-.hero-right {
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.vsl-box {
-    background: #000;
-    color: white;
-    width: 100%;
-    height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-}x}
+/* hero text */
+.hero-summary{flex:1;min-width:320px;max-width:520px}
+.hero-head{font-size:28px;margin:0 0 12px 0;color:var(--white);font-weight:700}
+.hero-sub{color:var(--muted);margin-bottom:20px;font-size:15px}
 
 /* INTRO split */
 .intro-section{padding:44px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
@@ -147,13 +135,6 @@ body{
 .proof-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .proof-left p{color:var(--muted);max-width:600px}
 
-/* CONTACT */
-.contact-section{padding:56px 0}
-.contact-inner{display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap}
-.contact-left{flex:1;min-width:320px}
-.contact-form{flex:0 0 420px;display:flex;flex-direction:column;gap:12px}
-.contact-form input{padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
-.contact-form button{padding:12px;border-radius:8px;border:0}
 
 /* FOOTER */
 .site-footer{background:#070707;padding:24px 0;border-top:1px solid rgba(255,255,255,0.02)}
@@ -181,4 +162,3 @@ body{
   .crm-img{height:160px}
   .contact-form{width:100%}
 }
-
