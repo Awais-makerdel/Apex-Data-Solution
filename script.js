@@ -1,43 +1,57 @@
-// Smooth scroll
-document.querySelectorAll('[data-scroll]').forEach(el => {
-    el.addEventListener('click', () => {
-        const target = document.querySelector(el.dataset.scroll);
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
+// Smooth scroll for anchors
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener('click', e=>{
+    const href = link.getAttribute('href');
+    if(href.length>1){
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  });
 });
 
-// Slider functionality
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slides .slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+// Fade-in sections on scroll (IntersectionObserver)
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add('fade-in');
+  });
+},{threshold:0.18});
+document.querySelectorAll('section').forEach(s=>{
+  s.classList.add('hidden');
+  io.observe(s);
+});
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+// Hero video play fallback (click)
+const heroPlay = document.getElementById('heroPlay');
+if(heroPlay){
+  heroPlay.addEventListener('click', ()=>{
+    const v = document.getElementById('heroVideo');
+    if(!v) return;
+    if(v.paused) { v.play(); heroPlay.textContent='▶ Playing'; }
+    else { v.pause(); heroPlay.textContent='▶ Play VSL'; }
+  });
 }
-prevBtn.addEventListener('click', () => {
-    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-    showSlide(slideIndex);
-});
-nextBtn.addEventListener('click', () => {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-});
 
-// Auto-slide
-setInterval(() => {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}, 8000);
-
-// Video CTA
-document.getElementById('play-main-video').addEventListener('click', () => {
-    alert("Video play functionality placeholder.");
-});
-
-// Contact form
-document.getElementById('contact-form').addEventListener('submit', e => {
+// Simple contact form handler (local)
+const contactForm = document.getElementById('contactForm');
+if(contactForm){
+  contactForm.addEventListener('submit', function(e){
     e.preventDefault();
-    alert('Form submitted!');
+    // show simple thank you and clear
+    alert('Thanks — we received your request. We will contact you shortly.');
+    contactForm.reset();
+  });
+}
+
+// Small accessibility: enable keyboard to jump to sections from nav items
+document.querySelectorAll('.nav a').forEach(a=>{
+  a.setAttribute('role','link');
+  a.setAttribute('tabindex','0');
+});
+
+// Optional: small sticky shadow on header on scroll
+window.addEventListener('scroll', ()=>{
+  const header = document.querySelector('.site-header');
+  if(window.scrollY>12) header.style.boxShadow='0 6px 22px rgba(0,0,0,0.45)';
+  else header.style.boxShadow='none';
 });
