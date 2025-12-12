@@ -20,7 +20,7 @@ body{
   -moz-osx-font-smoothing:grayscale;
   color:var(--white);
   background:var(--bg);
-  line-height:1.5;
+  line-height:1;
 }
 
 /* Layout container */
@@ -73,7 +73,7 @@ body{
 
 
 .brand-name {
-  font-size: 28px;      /* BIGGER NAME */
+  font-size: 30px;      /* BIGGER NAME */
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.5px;
@@ -115,7 +115,7 @@ body{
 /* HERO */
 .hero-section{
   display:flex;
-  gap:40px;
+  gap:30px;
   align-items:center;
   padding:48px 0;
   border-bottom:1px solid rgba(255,255,255,0.03);
@@ -236,23 +236,12 @@ body{
   opacity: 0.9;
 }
 
-/* HERO TEXT LEFT ALIGN IMPROVEMENT */
-.hero-left {
-  padding-left: 20px !important;   /* Closer to screen edge */
-  max-width: 600px;
-}
 
-/* Headline */
-.hero-left h1 {
-  margin-bottom: 6px !important;   /* REMOVE big gap */
 }
-
-/* Subheadline - slightly bigger + tighter spacing */
-.hero-left p {
-  font-size: 20px !important;      /* Slightly bigger */
-  line-height: 1.4;
-  margin-top: 0 !important;
-}
+/* hero text */
+.hero-summary{flex:1;min-width:320px;max-width:520px}
+.hero-head{font-size:28px;margin:0 0 6px 0;color:var(--white);font-weight:700}
+.hero-sub{color:var(--muted);margin-bottom:20px;font-size:20px}
 
 
 
