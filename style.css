@@ -71,12 +71,14 @@ body{
   align-items: center;
 }
 
+
 .brand-name {
-  color: #fff;
-  font-size: 26px;
+  font-size: 28px;      /* BIGGER NAME */
   font-weight: 700;
+  color: #fff;
   letter-spacing: 0.5px;
 }
+
 
 /* NAVIGATION */
 .nav-menu {
@@ -87,13 +89,13 @@ body{
 .nav-menu li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;        /* Slightly bigger */
+  font-size: 15px;        /* Slightly bigger */
   font-weight: 500;
   transition: opacity 0.2s ease;
 }
 
 .nav-menu li a:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* HERO */
@@ -190,4 +192,5 @@ body{
   .crm-img{height:160px}
   .contact-form{width:100%}
 }
+
 
