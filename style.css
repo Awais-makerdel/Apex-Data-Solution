@@ -212,5 +212,47 @@ body{
   flex-direction: row-reverse; /* This swaps left ↔ right */
 }
 
+/* GLOBAL CTA BUTTON FIX */
+.cta-btn, .header-cta, .primary-btn, .cta, .btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-btn:hover,
+.header-cta:hover,
+.primary-btn:hover,
+.cta:hover,
+.btn:hover {
+  background: #f2f2f2;
+  opacity: 0.9;
+}
+
+/* HERO TEXT LEFT ALIGN IMPROVEMENT */
+.hero-left {
+  padding-left: 20px !important;   /* Closer to screen edge */
+  max-width: 600px;
+}
+
+/* Headline */
+.hero-left h1 {
+  margin-bottom: 6px !important;   /* REMOVE big gap */
+}
+
+/* Subheadline - slightly bigger + tighter spacing */
+.hero-left p {
+  font-size: 20px !important;      /* Slightly bigger */
+  line-height: 1.4;
+  margin-top: 0 !important;
+}
+
 
 
