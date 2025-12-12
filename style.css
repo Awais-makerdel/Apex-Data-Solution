@@ -56,24 +56,45 @@ body{
   font-size:12px;
 }
 
-/* Nav */
-.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-.nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:14px}
-.nav a:hover{color:var(--white)}
-
-/* Buttons */
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  border:0;
-  cursor:pointer;
-  font-weight:600;
-  border-radius:8px;
-  padding:10px 16px;
+/* HEADER */
+.site-header {
+  background: #000;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-.btn.primary{background:var(--white);color:var(--bg);box-shadow:0 6px 24px rgba(0,0,0,0.6)}
-.btn.primary.large{padding:14px 28px;font-size:16px}
-.btn.secondary{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.08)}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* NAVIGATION */
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;        /* Slightly bigger */
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-menu li a:hover {
+  opacity: 0.6;
+}
 
 /* HERO */
 .hero-section{
@@ -169,3 +190,4 @@ body{
   .crm-img{height:160px}
   .contact-form{width:100%}
 }
+
