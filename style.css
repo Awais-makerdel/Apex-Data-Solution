@@ -309,3 +309,70 @@ header.sticky,
 
 
 
+/* ============================= */
+/* TOP HEADER / NEGATIVE BAR     */
+/* ============================= */
+.header-top {
+    background-color: #ffffff; /* white background */
+    height: 40px;              /* reduced height */
+    line-height: 40px;         /* vertically center text */
+    padding: 0 20px;           /* left/right padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;           /* adjust text size if needed */
+    color: #000000;            /* black text for visibility */
+}
+
+.header-top a {
+    color: #000000;            /* links also black */
+    text-decoration: none;
+}
+
+.header-top a.cta-btn {
+    background-color: #ffffff; /* keep button background white */
+    color: #000000;            /* button text black */
+    border: 1px solid #000;    /* optional button border */
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* ============================= */
+/* NAVIGATION BAR BELOW TOP BAR  */
+/* ============================= */
+.nav-bar {
+    height: 50px;              /* reduced height */
+    line-height: 50px;
+    background-color: #ffffff; /* keep nav bar white */
+    padding: 0 20px;           /* reduce left/right padding */
+}
+
+/* ============================= */
+/* HEADLINE + SUBHEADLINE ALIGN  */
+/* ============================= */
+.hero-section .headline-container {
+    padding-left: 20px;        /* minimal left padding */
+    padding-right: 20px;       /* optional right padding */
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 2.5rem;         /* adjust as needed */
+}
+
+.hero-section h2 {
+    margin-top: 5px;           /* very small gap from headline */
+    font-size: 1.3rem;         /* slightly larger for readability */
+}
+
+/* Remove unnecessary default spacing */
+.hero-section h1, 
+.hero-section h2 {
+    line-height: 1.2;          /* tighter vertical spacing */
+}
+
+
+
+
+
+
