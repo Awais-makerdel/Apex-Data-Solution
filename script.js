@@ -32,6 +32,17 @@ if(heroPlay){
   });
 }
 
+// Simple contact form handler (local)
+const contactForm = document.getElementById('contactForm');
+if(contactForm){
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    // show simple thank you and clear
+    alert('Thanks — we received your request. We will contact you shortly.');
+    contactForm.reset();
+  });
+}
+
 // Small accessibility: enable keyboard to jump to sections from nav items
 document.querySelectorAll('.nav a').forEach(a=>{
   a.setAttribute('role','link');
