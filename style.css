@@ -241,7 +241,71 @@ body{
 /* hero text */
 .hero-summary{flex:1;min-width:320px;max-width:520px}
 .hero-head{font-size:28px;margin:0 0 6px 0;color:var(--white);font-weight:700}
-.hero-sub{color:var(--muted);margin-bottom:20px;font-size:20px}
+.hero-sub{color:var(--muted);margin-bottom:20px;font-size:16px}
+
+/* Fix left alignment of hero headline + subheadline */
+.hero-content {
+    padding-left: 0 !important;       /* remove left gap */
+    margin-left: 0 !important;        /* remove margin gap */
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+/* Headline: attach tightly to left border */
+.hero-title {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Subheadline: slightly larger + no gap */
+.hero-subtitle {
+    margin-top: 4px !important;        /* tiny space under headline */
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Optional: keep container aligned left like modern landing pages */
+.hero-section {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+/* ===== HEADER ONLY COLOR FIX ===== */
+/* Make the top 1-inch bar (header) white */
+header,
+.site-header,
+.top-bar,
+.navbar {
+    background-color: #ffffff !important;   /* white bar */
+    border-bottom: 1px solid #e5e5e5;        /* subtle professional line */
+}
+
+/* Navigation links inside header turn black */
+header a,
+.site-header a,
+.navbar a,
+.top-bar a {
+    color: #000000 !important;               /* black text */
+}
+
+/* CTA button inside header becomes black text on white (link-look) */
+header .cta,
+.site-header .cta,
+.navbar .cta,
+.top-bar .cta {
+    background: transparent !important;      /* remove black box */
+    color: #000000 !important;               /* black text */
+    border: none !important;                 /* no border */
+    padding: 0 !important;                   /* link-style */
+    font-weight: 600;                        /* strong clean look */
+}
+
+/* Ensure header stays white even when sticky on scroll */
+header.sticky,
+.site-header.sticky,
+.navbar.sticky {
+    background-color: #ffffff !important;
+}
+
 
 
 
