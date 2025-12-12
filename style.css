@@ -54,26 +54,56 @@ body{
 .brand .brand-sub{
   color:var(--muted);
   font-size:12px;
-}
+ .uc-corpNav-accordionHeader:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      right: var(--cx-spacing-2x);
+      margin-top: -(8px);
+      margin-top: -(var(--cx-spacing-1x));
+      width: 16px;
+      width: var(--cx-spacing-2x);
+      height: 16px;
+      height: var(--cx-spacing-2x);
 
-/* Nav */
-.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-.nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:14px}
-.nav a:hover{color:var(--white)}
+      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20d%3D%22M8%2011.914L2.293%206.207l1.414-1.414L8%209.086l4.293-4.293%201.414%201.414L8%2011.914z%22%2F%3E%0A%3Cdefs%3E%3Cstyle%3Epath%20%7B%0A%20%20%20%20%20%20%20%20%20%20fill%3A%20%23000000%3B%0A%20%20%20%20%20%20%20%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3C%2Fsvg%3E%0A')
+    }
 
-/* Buttons */
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  border:0;
-  cursor:pointer;
-  font-weight:600;
-  border-radius:8px;
-  padding:10px 16px;
-}
-.btn.primary{background:var(--white);color:var(--bg);box-shadow:0 6px 24px rgba(0,0,0,0.6)}
-.btn.primary.large{padding:14px 28px;font-size:16px}
-.btn.secondary{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.08)}
+    .uc-corpNav-accordion:checked ~ .uc-corpNav-accordionHeader:after {
+      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20d%3D%22M12.293%2011.207L8%206.914l-4.293%204.293-1.414-1.414L8%204.086l5.707%205.707-1.414%201.414z%22%2F%3E%0A%3Cdefs%3E%3Cstyle%3Epath%20%7B%0A%20%20%20%20%20%20%20%20%20%20fill%3A%20%23003375%3B%0A%20%20%20%20%20%20%20%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3C%2Fsvg%3E%0A')
+    }
+
+    .uc-corpNav-accordionMenu {
+      height: 0;
+      opacity: 0;
+      overflow-y: hidden;
+      transition: opacity 200ms ease-out;
+    }
+
+    .uc-corpNav-accordion:checked ~ .uc-corpNav-accordionMenu {
+      height: auto;
+      opacity: 1;
+    }
+
+    .uc-corpNav-auth {
+      display: flex;
+      margin: 16px;
+      margin: var(--cx-spacing-2x);
+    }
+
+    .uc-corpNav-auth .uc-corpNav-authBtn:last-child {
+      margin-left: 16px;
+      margin-left: var(--cx-spacing-2x);
+    }
+
+    .uc-corpNav-auth button {
+      flex: 1;
+    }
+
+    .uc-corpNav-userMenu-loadingSpinner {
+      /* 137 pixels is the width of the current `Register/Sign In` field that replaces this one, when the user is logged out. */
+      padding: 0 57px 0 60px;
 
 /* HERO */
 .hero-section{
@@ -162,3 +192,4 @@ body{
   .crm-img{height:160px}
   .contact-form{width:100%}
 }
+
