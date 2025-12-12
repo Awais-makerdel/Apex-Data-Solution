@@ -351,25 +351,26 @@ header.sticky,
 /* HEADLINE + SUBHEADLINE ALIGN  */
 /* ============================= */
 .hero-section .headline-container {
-    padding-left: 20px;        /* minimal left padding */
-    padding-right: 20px;       /* optional right padding */
+    padding-left: 10px;        /* minimal left padding */
+    padding-right: 10px;       /* optional right padding */
 }
 
 .hero-section h1 {
     margin: 0;
-    font-size: 2.5rem;         /* adjust as needed */
+    font-size: 2rem;         /* adjust as needed */
 }
 
 .hero-section h2 {
-    margin-top: 5px;           /* very small gap from headline */
-    font-size: 1.3rem;         /* slightly larger for readability */
+    margin-top: 6px;           /* very small gap from headline */
+    font-size: 1rem;         /* slightly larger for readability */
 }
 
 /* Remove unnecessary default spacing */
 .hero-section h1, 
 .hero-section h2 {
-    line-height: 1.2;          /* tighter vertical spacing */
+    line-height: 0.7;          /* tighter vertical spacing */
 }
+
 
 
 
