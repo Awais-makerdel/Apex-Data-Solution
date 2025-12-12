@@ -371,9 +371,76 @@ header.sticky,
     line-height: 0.7;          /* tighter vertical spacing */
 }
 
+/* ============================= */
+/* TOP HEADER / NEGATIVE BAR     */
+/* ============================= */
+.site-header {
+    background-color: #ffffff; /* top bar white */
+    height: 50px;              /* reduced height */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;           /* minimal left/right spacing */
+}
 
+.site-header .brand-name {
+    color: #000000;            /* brand text black */
+    font-weight: bold;
+    font-size: 18px;
+}
 
+.site-header .nav-menu {
+    display: flex;
+    gap: 20px;                 /* spacing between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.site-header .nav-menu li a {
+    color: #000000;            /* nav links black */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
 
+.site-header .top-cta a.btn.primary {
+    background-color: #ffffff; /* button background white */
+    color: #000000;            /* button text black */
+    border: 1px solid #000;    /* optional button border */
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+}
 
+/* ============================= */
+/* HERO HEADLINE + SUBHEADLINE   */
+/* ============================= */
+.hero-section .hero-summary {
+    padding-left: 20px;         /* minimal left padding for professional look */
+    padding-right: 20px;        /* optional right padding */
+}
 
+.hero-section .hero-head {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-section .hero-sub {
+    margin-top: 5px;           /* very small gap from headline */
+    font-size: 1.3rem;         /* slightly larger for readability */
+    line-height: 1.4;
+}
+
+/* Optional: Reduce spacing in container if needed */
+.header-inner,
+.hero-inner {
+    max-width: 1200px;         /* keep content centered and professional */
+    margin: 0 auto;
+}
+
+/* Remove extra gaps between header items and left border */
+.site-header .container.header-inner {
+    padding-left: 20px;        /* minimal left padding */
+    padding-right: 20px;       /* minimal right padding */
+}
